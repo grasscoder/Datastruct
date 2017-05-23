@@ -2,7 +2,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class RelativePrime {
 
-	//Ê¹ÓÃÅ·¼¸ÀïµÃËã·¨ÇóÁ½¸öÊıµÄ×î´ó¹«Ô¼Êı
+	//ä½¿ç”¨æ¬§å‡ é‡Œç®—æ³•æ±‚è§£æœ€å¤§å…¬çº¦æ•°
 	public static int Euclid(int x,int y){
 		if(x<y){int tem= x;x=y;y=tem;}
 		int t = x%y;
@@ -13,16 +13,17 @@ public class RelativePrime {
 		}
 		return y;
 		}	
+	
 	public static int Euclid2(int x,int y){
-		//Ê¹ÓÃµİ¹éËã·¨ÊµÏÖÅ·¼¸ÀïµÃËã·¨
+		//ä½¿ç”¨é€’å½’æ¬§å‡ é‡Œå¾—ç®—æ³•æ±‚è§£æœ€å¤§å…¬çº¦æ•°
 		if(x<y){int tem=x;x=y;y=tem;}
 		int t = x%y;
 		if(t==0) return y;
 		else return Euclid2(y, t);
 	}
 	
-	//±àĞ´Ò»¸öÇóÁ½¸öÊıÊÇ·ñ»¥ÖÊµÄ·½·¨,Èô¹ûÁ½¸öÊıµÄ×î´ó¹«Ô¼Êı²»ÊÇ1£¬¾Í²»ÊÇ»¥ÖÊ¡£
-	//0ÓëÈÎºÎÕûÊı²»»¥ÖÊ
+	//ï¿½ï¿½Ğ´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ÊµÄ·ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Í²ï¿½ï¿½Ç»ï¿½ï¿½Ê¡ï¿½
+	//ä¸¤ä¸ªæ•°æ²¡æœ‰å…¬çº¦æ•°ï¼ˆé™¤äº†1 ä¹‹å¤–ï¼‰
 	public static boolean rprime(int x,int y){
 		if(Euclid(x, y)==1){return true;}
 		else return false;

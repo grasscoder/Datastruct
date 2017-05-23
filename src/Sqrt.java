@@ -3,12 +3,12 @@ import edu.princeton.cs.algs4.StdOut;
 public class Sqrt {
 
 	public static double sqrt(double n){
-		
+		//ç‰›é¡¿è¿­ä»£æ³•æ±‚å¹³æ–¹æ ¹
 		if(n<0) return Double.NaN;
 		double err = 1e-15;
 		double x=1.0;
-		while(Math.abs(n-x*x)>err){
-			x = 0.5*(x+n/x);//²»¶ÏÁîxµÈÓÚxºÍn/xµÄÆ½¾ùÊı
+		while(Math.abs(n-x*x)>err){//ä¹Ÿå¯ä»¥ä½¿ç”¨(n/x - x)
+			x = 0.5*(x+n/x);//
 		}
 		return x;
 	}

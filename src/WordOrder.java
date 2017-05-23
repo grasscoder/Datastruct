@@ -2,7 +2,8 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class WordOrder {
 
-	//ÅĞ¶Ï×Ö·û´®Êı×éÖĞµÄµ¥´ÊÊÇ·ñÊÇ£ºÇ°Ò»¸öµ¥´ÊµÄÎ²×ÖÄ¸ÊÇ·ñÊÇ¶¼Ò»¸öµ¥´ÊµÄÊ××ÖÄ¸£¬
+	//å®ç°å¯¹å­—ç¬¦ä¸²æ’è¡€çš„é™æ€å‡½æ•°
+	//é™æ€å‡½æ•°ä¸å®åŠ›å‡½æ•°çš„åŒºåˆ«æ˜¯ï¼šé™æ€æ–¹æ³•çš„åŠŸèƒ½æ˜¯å®ç°å‡½æ•°åŠŸèƒ½ï¼Œå®ä¾‹å‡½æ•°çš„ä½œç”¨æ˜¯ï¼šå¯¹æ•°æ®ç±»å‹çš„æ“ä½œ
 	public static int wordListOrder(String[] arr){
 		int arrlength = arr.length-1;
 		for(int i=0;i<arrlength;i++){

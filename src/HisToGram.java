@@ -3,6 +3,7 @@ import edu.princeton.cs.algs4.StdOut;
 public class HisToGram {
     
 	public static int count(int[] a,int key){
+		//ç»Ÿè®¡keyåœ¨æ•°ç»„aä¸­å‡ºçŽ°çš„æ¬¡æ•°
 		int count=0;
 		for(int i=0;i<a.length;i++){
 			if(a[i]==key){count++;}
@@ -11,12 +12,12 @@ public class HisToGram {
 		
 	}
 	public static int[] histogram(int[] a,int M){
-		//·µ»ØÒ»¸ö´óÐ¡ÎªMµÄÊý×é£¬ÆäÖÐµÚi¸öÔªËØÎªÕûÊýiÔÚ²ÎÊýÊý×éÖÐ³öÏÖµÄ´ÎÊý¡£
+		//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ð¡ÎªMï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½Ðµï¿½iï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½iï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½ï¿½ï¿½
 		int[] x = new int[M];
         for(int i=0;i<M;i++){
         	x[i] = count(a,i);
 		}
-	return x;
+	    return x;
 	}
 	
 	public static void main(String[] args) {

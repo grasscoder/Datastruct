@@ -8,15 +8,16 @@ public class BagQuStack {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        Stack<String> stack = new Stack<String>();//创建一个空栈
+        Stack<String> stack = new Stack<String>();//瀹氫箟涓�涓爤
         Queue<String> que = new Queue<String>();
-        Bag<Integer> bag = new Bag<Integer>();//<>中必须是引用类型
-        stack.push("hello");
-        stack.push("world");
-        StdOut.print(stack.size()+"\n");
-        StdOut.println(stack.peek());
+        Bag<Integer> bag = new Bag<Integer>();
+//        stack.push("hello");
+//        stack.push("world");
+//        StdOut.print(stack.size()+"\n");
+//        StdOut.println(stack.peek()+"\n");
+	
         
-        //背包的典型用例子
+        
         while(!StdIn.isEmpty()){
         	bag.add(StdIn.readInt());
         }
@@ -27,8 +28,9 @@ public class BagQuStack {
         	
         }
         double Avg = sum/N;
+//        StdOut.print(stack.size()+"\n");
         StdOut.println(Avg);
-	
+       
 	}
 
 }
